@@ -1,0 +1,11 @@
+D:\ClasesPAV1\Clase01\Clase01\bin\Debug\Clase01.exe.config
+D:\ClasesPAV1\Clase01\Clase01\bin\Debug\Clase01.exe
+D:\ClasesPAV1\Clase01\Clase01\bin\Debug\Clase01.pdb
+D:\ClasesPAV1\Clase01\Clase01\obj\Debug\Clase01.csproj.AssemblyReference.cache
+D:\ClasesPAV1\Clase01\Clase01\obj\Debug\Clase01.csproj.SuggestedBindingRedirects.cache
+D:\ClasesPAV1\Clase01\Clase01\obj\Debug\Clase01.Form1.resources
+D:\ClasesPAV1\Clase01\Clase01\obj\Debug\Clase01.Properties.Resources.resources
+D:\ClasesPAV1\Clase01\Clase01\obj\Debug\Clase01.csproj.GenerateResource.cache
+D:\ClasesPAV1\Clase01\Clase01\obj\Debug\Clase01.csproj.CoreCompileInputs.cache
+D:\ClasesPAV1\Clase01\Clase01\obj\Debug\Clase01.exe
+D:\ClasesPAV1\Clase01\Clase01\obj\Debug\Clase01.pdb
