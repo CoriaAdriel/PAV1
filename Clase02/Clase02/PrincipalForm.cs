@@ -30,5 +30,11 @@ namespace Clase02
             AltaPersona altaPersona = new AltaPersona();
             altaPersona.ShowDialog();
         }
+
+        private void consultaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Usuarios usuarios = new Usuarios();
+            usuarios.ShowDialog();
+        }
     }
 }

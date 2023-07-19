@@ -76,8 +76,9 @@
             // consultaToolStripMenuItem
             // 
             this.consultaToolStripMenuItem.Name = "consultaToolStripMenuItem";
-            this.consultaToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.consultaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.consultaToolStripMenuItem.Text = "Consulta";
+            this.consultaToolStripMenuItem.Click += new System.EventHandler(this.consultaToolStripMenuItem_Click);
             // 
             // alumnosToolStripMenuItem
             // 
@@ -106,7 +107,7 @@
             // altaPersonaToolStripMenuItem
             // 
             this.altaPersonaToolStripMenuItem.Name = "altaPersonaToolStripMenuItem";
-            this.altaPersonaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.altaPersonaToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.altaPersonaToolStripMenuItem.Text = "Alta Persona";
             this.altaPersonaToolStripMenuItem.Click += new System.EventHandler(this.altaPersonaToolStripMenuItem_Click);
             // 
