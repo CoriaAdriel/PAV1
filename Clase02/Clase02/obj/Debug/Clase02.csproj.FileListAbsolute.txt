@@ -10,3 +10,4 @@ D:\ClasesPAV1\Clase02\Clase02\obj\Debug\Clase02.csproj.CoreCompileInputs.cache
 D:\ClasesPAV1\Clase02\Clase02\obj\Debug\Clase02.exe
 D:\ClasesPAV1\Clase02\Clase02\obj\Debug\Clase02.pdb
 D:\ClasesPAV1\Clase02\Clase02\obj\Debug\Clase02.PrincipalForm.resources
+D:\ClasesPAV1\Clase02\Clase02\obj\Debug\Clase02.AltaPersona.resources

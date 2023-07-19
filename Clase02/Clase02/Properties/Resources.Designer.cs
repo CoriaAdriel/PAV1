@@ -73,6 +73,16 @@ namespace Clase02.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap IconoPersona {
+            get {
+                object obj = ResourceManager.GetObject("IconoPersona", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap IconoUsuario {
             get {
                 object obj = ResourceManager.GetObject("IconoUsuario", resourceCulture);

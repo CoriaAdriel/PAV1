@@ -24,5 +24,11 @@ namespace Clase02
         {
 
         }
+
+        private void altaPersonaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AltaPersona altaPersona = new AltaPersona();
+            altaPersona.ShowDialog();
+        }
     }
 }
