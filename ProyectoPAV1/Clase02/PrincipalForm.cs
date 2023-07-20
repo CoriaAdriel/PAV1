@@ -36,5 +36,11 @@ namespace Clase02
             Usuarios usuarios = new Usuarios();
             usuarios.ShowDialog();
         }
+
+        private void altaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AltaCurso altaCurso = new AltaCurso();
+            altaCurso.ShowDialog();
+        }
     }
 }
