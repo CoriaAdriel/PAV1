@@ -1,0 +1,14 @@
+D:\ClasesPAV1\Clase02\Clase02\bin\Release\Clase02.exe.config
+D:\ClasesPAV1\Clase02\Clase02\bin\Release\Clase02.exe
+D:\ClasesPAV1\Clase02\Clase02\bin\Release\Clase02.pdb
+D:\ClasesPAV1\Clase02\Clase02\obj\Release\Clase02.csproj.AssemblyReference.cache
+D:\ClasesPAV1\Clase02\Clase02\obj\Release\Clase02.csproj.SuggestedBindingRedirects.cache
+D:\ClasesPAV1\Clase02\Clase02\obj\Release\Clase02.AltaPersona.resources
+D:\ClasesPAV1\Clase02\Clase02\obj\Release\Clase02.LoginForm.resources
+D:\ClasesPAV1\Clase02\Clase02\obj\Release\Clase02.PrincipalForm.resources
+D:\ClasesPAV1\Clase02\Clase02\obj\Release\Clase02.Properties.Resources.resources
+D:\ClasesPAV1\Clase02\Clase02\obj\Release\Clase02.Usuarios.resources
+D:\ClasesPAV1\Clase02\Clase02\obj\Release\Clase02.csproj.GenerateResource.cache
+D:\ClasesPAV1\Clase02\Clase02\obj\Release\Clase02.csproj.CoreCompileInputs.cache
+D:\ClasesPAV1\Clase02\Clase02\obj\Release\Clase02.exe
+D:\ClasesPAV1\Clase02\Clase02\obj\Release\Clase02.pdb
