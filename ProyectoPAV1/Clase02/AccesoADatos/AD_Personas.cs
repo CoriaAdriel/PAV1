@@ -35,7 +35,7 @@ namespace Clase02.AccesoADatos
 
                 return tabla;
             }
-            catch (Exception e)
+            catch (Exception)
             {
 
                 throw;

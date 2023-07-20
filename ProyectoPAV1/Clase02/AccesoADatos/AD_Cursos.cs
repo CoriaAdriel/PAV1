@@ -93,5 +93,67 @@ namespace Clase02.AccesoADatos
                 cn.Close();
             }
         }
+        public static DataTable ObtenerListadoDeCursos()
+        {            
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection cn = new SqlConnection(cadenaConexion);
+            try
+            {
+                SqlCommand cmd = new SqlCommand();                
+                string consulta = "SELECT * FROM Cursos";
+
+                cmd.Parameters.Clear(); 
+                cmd.CommandType = CommandType.Text; 
+                cmd.CommandText = consulta; 
+
+                cn.Open(); 
+                cmd.Connection = cn; 
+
+                DataTable tabla = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+
+                return tabla;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
+        public static DataTable ObtenerEstadisticaCursos()
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
+            SqlConnection cn = new SqlConnection(cadenaConexion);
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                string consulta = "SELECT c.Nombre, COUNT(pc.IdPersona) as Cantidad\r\nFROM PersonasXCursos pc Inner Join Cursos c on pc.IdCurso = c.Id\r\nGROUP BY c.Nombre;";
+
+                cmd.Parameters.Clear();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                DataTable tabla = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+
+                return tabla;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
     }
 }

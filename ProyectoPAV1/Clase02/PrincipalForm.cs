@@ -42,5 +42,17 @@ namespace Clase02
             AltaCurso altaCurso = new AltaCurso();
             altaCurso.ShowDialog();
         }
+
+        private void listadoDeCursosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReporteListadoCursos reporteListadoCursos = new ReporteListadoCursos();
+            reporteListadoCursos.ShowDialog();
+        }
+
+        private void estadísticaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReporteEstadistica reporteEstadistica = new ReporteEstadistica();
+            reporteEstadistica.ShowDialog();
+        }
     }
 }

@@ -54,7 +54,7 @@ namespace Clase02.AccesoADatos
 
                 return resultado;
             }
-            catch (Exception e)
+            catch (Exception)
             {
 
                 throw; // Lo va a devolver al otro método que la invocó
@@ -89,7 +89,7 @@ namespace Clase02.AccesoADatos
 
                 return tabla;
             }
-            catch (Exception e)
+            catch (Exception)
             {
 
                 throw; // Lo va a devolver al otro método que la invocó

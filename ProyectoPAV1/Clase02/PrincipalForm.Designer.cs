@@ -38,6 +38,9 @@
             this.altaPersonaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cursosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.altaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listadoDeCursosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.estadísticaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,7 +63,8 @@
             this.usuarioToolStripMenuItem,
             this.alumnosToolStripMenuItem,
             this.personasToolStripMenuItem,
-            this.cursosToolStripMenuItem});
+            this.cursosToolStripMenuItem,
+            this.reportesToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(643, 24);
@@ -126,9 +130,33 @@
             // altaToolStripMenuItem
             // 
             this.altaToolStripMenuItem.Name = "altaToolStripMenuItem";
-            this.altaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.altaToolStripMenuItem.Size = new System.Drawing.Size(95, 22);
             this.altaToolStripMenuItem.Text = "Alta";
             this.altaToolStripMenuItem.Click += new System.EventHandler(this.altaToolStripMenuItem_Click);
+            // 
+            // reportesToolStripMenuItem
+            // 
+            this.reportesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.listadoDeCursosToolStripMenuItem,
+            this.estadísticaToolStripMenuItem});
+            this.reportesToolStripMenuItem.Image = global::Clase02.Properties.Resources.IconoReporte;
+            this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
+            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
+            this.reportesToolStripMenuItem.Text = "Reportes";
+            // 
+            // listadoDeCursosToolStripMenuItem
+            // 
+            this.listadoDeCursosToolStripMenuItem.Name = "listadoDeCursosToolStripMenuItem";
+            this.listadoDeCursosToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.listadoDeCursosToolStripMenuItem.Text = "Listado de Cursos";
+            this.listadoDeCursosToolStripMenuItem.Click += new System.EventHandler(this.listadoDeCursosToolStripMenuItem_Click);
+            // 
+            // estadísticaToolStripMenuItem
+            // 
+            this.estadísticaToolStripMenuItem.Name = "estadísticaToolStripMenuItem";
+            this.estadísticaToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.estadísticaToolStripMenuItem.Text = "Estadística de Cursos";
+            this.estadísticaToolStripMenuItem.Click += new System.EventHandler(this.estadísticaToolStripMenuItem_Click);
             // 
             // PrincipalForm
             // 
@@ -164,5 +192,8 @@
         private System.Windows.Forms.ToolStripMenuItem altaPersonaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cursosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem altaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem listadoDeCursosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem estadísticaToolStripMenuItem;
     }
 }
