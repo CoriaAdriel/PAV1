@@ -37,9 +37,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblSexo = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.rdMasculino = new System.Windows.Forms.RadioButton();
-            this.rdFemenino = new System.Windows.Forms.RadioButton();
             this.rdOtro = new System.Windows.Forms.RadioButton();
+            this.rdFemenino = new System.Windows.Forms.RadioButton();
+            this.rdMasculino = new System.Windows.Forms.RadioButton();
             this.lblTipoDocumento = new System.Windows.Forms.Label();
             this.cmbTipoDocumento = new System.Windows.Forms.ComboBox();
             this.lblNumeroDocumento = new System.Windows.Forms.Label();
@@ -59,9 +59,11 @@
             this.btnLimpiarCampos = new System.Windows.Forms.Button();
             this.lblDatosAdicionales = new System.Windows.Forms.Label();
             this.gdrPersonas = new System.Windows.Forms.DataGridView();
+            this.TipoDocumento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Documento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnActualizar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gdrPersonas)).BeginInit();
             this.SuspendLayout();
@@ -160,17 +162,17 @@
             this.panel1.Size = new System.Drawing.Size(102, 100);
             this.panel1.TabIndex = 8;
             // 
-            // rdMasculino
+            // rdOtro
             // 
-            this.rdMasculino.AutoSize = true;
-            this.rdMasculino.Location = new System.Drawing.Point(4, 3);
-            this.rdMasculino.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.rdMasculino.Name = "rdMasculino";
-            this.rdMasculino.Size = new System.Drawing.Size(88, 20);
-            this.rdMasculino.TabIndex = 9;
-            this.rdMasculino.TabStop = true;
-            this.rdMasculino.Text = "Masculino";
-            this.rdMasculino.UseVisualStyleBackColor = true;
+            this.rdOtro.AutoSize = true;
+            this.rdOtro.Location = new System.Drawing.Point(4, 55);
+            this.rdOtro.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.rdOtro.Name = "rdOtro";
+            this.rdOtro.Size = new System.Drawing.Size(53, 20);
+            this.rdOtro.TabIndex = 11;
+            this.rdOtro.TabStop = true;
+            this.rdOtro.Text = "Otro";
+            this.rdOtro.UseVisualStyleBackColor = true;
             // 
             // rdFemenino
             // 
@@ -184,17 +186,17 @@
             this.rdFemenino.Text = "Femenino";
             this.rdFemenino.UseVisualStyleBackColor = true;
             // 
-            // rdOtro
+            // rdMasculino
             // 
-            this.rdOtro.AutoSize = true;
-            this.rdOtro.Location = new System.Drawing.Point(4, 55);
-            this.rdOtro.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.rdOtro.Name = "rdOtro";
-            this.rdOtro.Size = new System.Drawing.Size(53, 20);
-            this.rdOtro.TabIndex = 11;
-            this.rdOtro.TabStop = true;
-            this.rdOtro.Text = "Otro";
-            this.rdOtro.UseVisualStyleBackColor = true;
+            this.rdMasculino.AutoSize = true;
+            this.rdMasculino.Location = new System.Drawing.Point(4, 3);
+            this.rdMasculino.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.rdMasculino.Name = "rdMasculino";
+            this.rdMasculino.Size = new System.Drawing.Size(88, 20);
+            this.rdMasculino.TabIndex = 9;
+            this.rdMasculino.TabStop = true;
+            this.rdMasculino.Text = "Masculino";
+            this.rdMasculino.UseVisualStyleBackColor = true;
             // 
             // lblTipoDocumento
             // 
@@ -352,7 +354,7 @@
             // btnGuardarPersona
             // 
             this.btnGuardarPersona.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardarPersona.Location = new System.Drawing.Point(181, 534);
+            this.btnGuardarPersona.Location = new System.Drawing.Point(210, 534);
             this.btnGuardarPersona.Name = "btnGuardarPersona";
             this.btnGuardarPersona.Size = new System.Drawing.Size(75, 46);
             this.btnGuardarPersona.TabIndex = 24;
@@ -388,23 +390,35 @@
             this.gdrPersonas.AllowUserToDeleteRows = false;
             this.gdrPersonas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gdrPersonas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.TipoDocumento,
             this.Documento,
             this.Nombre,
             this.Apellido});
             this.gdrPersonas.Location = new System.Drawing.Point(412, 51);
             this.gdrPersonas.Name = "gdrPersonas";
             this.gdrPersonas.ReadOnly = true;
-            this.gdrPersonas.Size = new System.Drawing.Size(654, 446);
+            this.gdrPersonas.Size = new System.Drawing.Size(693, 446);
             this.gdrPersonas.TabIndex = 27;
+            this.gdrPersonas.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gdrPersonas_CellClick);
+            // 
+            // TipoDocumento
+            // 
+            this.TipoDocumento.DataPropertyName = "IdTipoDocumento";
+            this.TipoDocumento.HeaderText = "Tipo de Documento";
+            this.TipoDocumento.Name = "TipoDocumento";
+            this.TipoDocumento.ReadOnly = true;
+            this.TipoDocumento.Width = 40;
             // 
             // Documento
             // 
+            this.Documento.DataPropertyName = "NroDocumento";
             this.Documento.HeaderText = "Documento";
             this.Documento.Name = "Documento";
             this.Documento.ReadOnly = true;
             // 
             // Nombre
             // 
+            this.Nombre.DataPropertyName = "Nombre";
             this.Nombre.HeaderText = "Nombre";
             this.Nombre.Name = "Nombre";
             this.Nombre.ReadOnly = true;
@@ -412,16 +426,29 @@
             // 
             // Apellido
             // 
+            this.Apellido.DataPropertyName = "Apellido";
             this.Apellido.HeaderText = "Apellido";
             this.Apellido.Name = "Apellido";
             this.Apellido.ReadOnly = true;
             this.Apellido.Width = 250;
+            // 
+            // btnActualizar
+            // 
+            this.btnActualizar.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActualizar.Location = new System.Drawing.Point(102, 534);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(88, 46);
+            this.btnActualizar.TabIndex = 28;
+            this.btnActualizar.Text = "Actualizar Persona";
+            this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // AltaPersona
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1117, 592);
+            this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.gdrPersonas);
             this.Controls.Add(this.lblDatosAdicionales);
             this.Controls.Add(this.btnLimpiarCampos);
@@ -497,8 +524,10 @@
         private System.Windows.Forms.Button btnLimpiarCampos;
         private System.Windows.Forms.Label lblDatosAdicionales;
         private System.Windows.Forms.DataGridView gdrPersonas;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TipoDocumento;
         private System.Windows.Forms.DataGridViewTextBoxColumn Documento;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn Apellido;
+        private System.Windows.Forms.Button btnActualizar;
     }
 }
